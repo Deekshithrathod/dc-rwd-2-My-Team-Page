@@ -12,7 +12,6 @@ body {
 .nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   margin: 0 auto;
   margin-bottom: 150px;
   max-width: 1000px;
@@ -57,22 +56,19 @@ body {
   height: 100%;
   margin: 0 auto;
   max-width: 1000px;
-  /* background-color: red; */
-  display: flex;
-  justify-content: space-evenly;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card {
   display: flex;
-  margin-bottom: 132px;
-  margin-right: 67px;
 }
 
 .card-primary {
   display: flex;
   flex-direction: column;
 
-  /* color: #000; */
   font-family: "Poppins";
   font-size: 18px;
   font-style: normal;
@@ -83,7 +79,6 @@ body {
 .card-primary > img {
   width: 237px;
   height: 341px;
-  /* flex-shrink: 0; */
 }
 
 .card-secondary {
@@ -96,41 +91,66 @@ body {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-
-  /* transform: rotate(90deg); */
 }
 
-.second-col {
+.card:nth-child(2),
+.card:nth-child(5) {
   margin-top: 100px;
 }
 
-/* ul {
-  padding-left: 24px;
-}
+@media (max-width: 390px) {
+  body {
+    margin: 70px 12px 0 12px;
+  }
+  .nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-li {
-  margin-bottom: 8px;
-}
+  .nav > div {
+    margin-top: 40px;
+  }
 
-.welcome {
-  max-width: 800px;
-  margin: 0 auto;
-}
+  .nav > div > p {
+    margin-top: 10px;
+  }
 
-.welcome-text {
-  margin-top: 30vh;
-  font-weight: 500;
-}
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 10px;
+    width: 100%;
+  }
 
-.welcome-text p {
-  font-size: 1rem;
-  font-weight: 400;
-}
+  .card-primary {
+    color: #000;
+    font-family: "Poppins";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .card-primary > img {
+    width: 138.347px;
+    height: 209px;
+  }
 
-.welcome-text h1 {
-  font-size: 1.5rem;
-}
+  .card-secondary {
+    color: #000;
+    font-family: "PT Serif";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
 
-.welcome-text a {
-  color: #f7542e;
-} */
+  .card:nth-child(5) {
+    margin-top: 0px;
+  }
+
+  .card:nth-child(2n) {
+    margin-top: 28px;
+  }
+}

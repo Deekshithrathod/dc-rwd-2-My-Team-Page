@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 110px 0;
+  position: relative;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 0 auto;
+  margin-bottom: 150px;
+  max-width: 1000px;
+}
+
+.nav > h5 {
+  color: #000;
+  font-family: "PT Serif";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -1.62px;
+}
+
+.nav > div {
+  width: 439px;
+  height: 87px;
+}
+
+.nav > div > h6 {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.nav > div > p {
+  color: #000;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  display: flex;
+  margin-bottom: 132px;
+  margin-right: 67px;
+}
+
+.card-primary {
+  display: flex;
+  flex-direction: column;
+
+  /* color: #000; */
+  font-family: "Poppins";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.card-primary > img {
+  width: 237px;
+  height: 341px;
+  /* flex-shrink: 0; */
+}
+
+.card-secondary {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+
+  font-family: "PT Serif";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+
+  /* transform: rotate(90deg); */
+}
+
+.second-col {
+  margin-top: 100px;
+}
+
+/* ul {
+  padding-left: 24px;
+}
+
+li {
+  margin-bottom: 8px;
+}
+
+.welcome {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.welcome-text {
+  margin-top: 30vh;
+  font-weight: 500;
+}
+
+.welcome-text p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.welcome-text h1 {
+  font-size: 1.5rem;
+}
+
+.welcome-text a {
+  color: #f7542e;
+} */

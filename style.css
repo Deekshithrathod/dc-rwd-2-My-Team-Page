@@ -4,153 +4,162 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
-  margin: 110px 0;
-  position: relative;
+  padding: 4rem 0.75rem 2rem;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 0 auto;
-  margin-bottom: 150px;
-  max-width: 1000px;
-}
-
-.nav > h5 {
+h1 {
   color: #000;
   font-family: "PT Serif";
-  font-size: 36px;
+  font-size: 2.25rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
   letter-spacing: -1.62px;
 }
 
-.nav > div {
-  width: 439px;
-  height: 87px;
+nav > div {
+  margin-top: 2.5rem;
 }
 
-.nav > div > h6 {
+h2 {
   color: #000;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
 }
 
-.nav > div > p {
+nav > div > p {
   color: #000;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 0.625rem;
 }
 
-.main {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  max-width: 1000px;
-
+main {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem 1.5rem;
+  width: 100%;
+
+  margin-top: 5rem;
 }
 
 .card {
   display: flex;
 }
 
-.card-primary {
-  display: flex;
-  flex-direction: column;
+img {
+  height: 17rem;
+  margin-bottom: 0.625rem;
+}
 
+.primary-name {
+  color: #000;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 0.875rem;
   font-style: normal;
   font-weight: 600;
   line-height: normal;
 }
 
-.card-primary > img {
-  width: 237px;
-  height: 341px;
-}
-
 .card-secondary {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-
   font-family: "PT Serif";
-  font-size: 12px;
+  font-size: 0.625rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+
+  writing-mode: vertical-rl;
+  margin-left: 0.5rem;
 }
 
-.card:nth-child(2),
-.card:nth-child(5) {
-  margin-top: 100px;
+.card:nth-child(2n) {
+  margin-top: 4rem;
 }
 
-@media (max-width: 390px) {
+footer {
+  color: #bdbdbd;
+  font-family: "Montserrat";
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-style: normal;
+  line-height: normal;
+  text-align: center;
+
+  margin-top: 10rem;
+}
+
+footer > b > a {
+  color: #bdbdbd;
+  font-weight: 700;
+  text-transform: none;
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
   body {
-    margin: 70px 12px 0 12px;
+    padding: 7rem 5rem 4rem;
   }
-  .nav {
+
+  nav {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+
+    width: 80%;
+    max-width: 75rem;
+    margin: 0 auto;
   }
 
-  .nav > div {
-    margin-top: 40px;
+  h1 {
+    width: 50%;
+    font-size: 2.25rem;
   }
 
-  .nav > div > p {
-    margin-top: 10px;
+  nav > div {
+    width: 50%;
+    margin-top: 0;
   }
 
-  .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px 10px;
-    width: 100%;
+  h2 {
+    font-size: 1.125rem;
   }
 
-  .card-primary {
-    color: #000;
-    font-family: "Poppins";
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+  nav > p {
+    font-size: 1.125rem;
   }
-  .card-primary > img {
-    width: 138.347px;
-    height: 209px;
+
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem 4rem;
+
+    width: 80%;
+    max-width: 75rem;
+    margin: 6rem auto 0;
+  }
+
+  img {
+    height: 25rem;
+    margin-bottom: 1rem;
+  }
+
+  .primary-name {
+    font-size: 1.25rem;
   }
 
   .card-secondary {
-    color: #000;
-    font-family: "PT Serif";
-    font-size: 10px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
+    font-size: 0.75rem;
   }
-
-  .card:nth-child(5) {
-    margin-top: 0px;
-  }
-
   .card:nth-child(2n) {
-    margin-top: 28px;
+    margin-top: 0;
+  }
+  .card:nth-child(2),
+  .card:nth-child(5) {
+    margin-top: 6rem;
   }
 }

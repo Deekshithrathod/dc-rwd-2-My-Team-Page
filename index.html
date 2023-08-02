@@ -1,145 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1,
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1,
   maximum-scale=5" />
 
-  <link rel="icon" href="devchallenges.png" />
+    <link rel="icon" href="public/favicon.ico" />
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link rel="shortcut icon" type="image/x-icon" href="public/favicon.ico" />
 
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
 
-  <title>My Team</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <title>My Team</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
 
-  <script type="module" defer>
-    import {
-      annotate
-    } from 'https://unpkg.com/rough-notation?module';
-    const annotation = annotate(document.querySelector("h5 > span"), {
-      type: "highlight",
-      color: "yellow",
-      padding: [2, 10],
-      strokeWidth: 3,
-      animationDuration: 3000,
-      rtl: true
-    });
+    <script type="module" defer>
+      import {
+        annotate
+      } from 'https://unpkg.com/rough-notation?module';
+      const annotation = annotate(document.querySelector("h1 > span"), {
+        type: "highlight",
+        color: "yellow",
+        padding: [2, 10],
+        strokeWidth: 3,
+        animationDuration: 3000,
+        rtl: true
+      });
 
-    annotation.show();
-  </script>
-</head>
+      annotation.show();
+    </script>
+  </head>
 
-<body>
-  <div class="nav">
-    <h5>The &nbsp;<span> creative &nbsp;</span> Crew
-    </h5>
-    <div>
-      <!-- <h6>&nbsp;<span>Who WE ARE</span>&nbsp;</h6> -->
-      <h6>Who WE ARE</h6>
-      <br />
-      <p>We are team of creatively diverse. driven. innovative individuals working in various locations from the world.</p>
-    </div>
-  </div>
-  <div class="main">
-    <!-- <div class="col"> -->
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo1.png" alt="Profile Photo">
-        Bill Mahoney
+  <body>
+    <nav>
+      <h1>The &nbsp;<span> creative &nbsp;</span> crew</h1>
+      <div>
+        <h2>Who WE ARE</h2>
+        <p>
+          We are team of creatively diverse. driven. innovative individuals
+          working in various locations from the world.
+        </p>
       </div>
-      <div class="card-secondary">
-        Product Owner
+    </nav>
+    <main>
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo1.png" alt="Profile Photo" />
+          <div class="primary-name">Bill Mahoney</div>
+        </div>
+        <div class="card-secondary">Product Owner</div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo2.png" alt="Profile Photo">
-        Skyla Lu
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo2.png" alt="Profile Photo" />
+          <div class="primary-name">Saba Cabrera</div>
+        </div>
+        <div class="card-secondary">Art director</div>
       </div>
-      <div class="card-secondary">
-        UX Designer
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo3.png" alt="Profile Photo" />
+          <div class="primary-name">Shae Le</div>
+        </div>
+        <div class="card-secondary">Tech Lead</div>
       </div>
-    </div>
-
-    <!-- </div>
-    <div class="col second-col"> -->
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo3.png" alt="Profile Photo">
-        Saba Cabrera
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo4.png" alt="Profile Photo" />
+          <div class="primary-name">Skylah Lu</div>
+        </div>
+        <div class="card-secondary">UX Designer</div>
       </div>
-      <div class="card-secondary">
-        Art Director
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo5.png" alt="Profile Photo" />
+          <div class="primary-name">Griff Richards</div>
+        </div>
+        <div class="card-secondary">Developer</div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo4.png" alt="Profile Photo">
-        Griff Richards
+      <div class="card">
+        <div class="card-primary">
+          <img src="public/photo6.png" alt="Profile Photo" />
+          <div class="primary-name">Stan John</div>
+        </div>
+        <div class="card-secondary">Developer</div>
       </div>
-      <div class="card-secondary">
-        Developer
-      </div>
-    </div>
-    <!-- </div>
-    <div class="col"> -->
-
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo5.png" alt="Profile Photo">
-        Shae Le
-      </div>
-      <div class="card-secondary">
-        Tech Lead
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-primary">
-        <img src="photo6.png" alt="Profile Photo">
-        Stan John
-      </div>
-      <div class="card-secondary">
-        Developer
-      </div>
-    </div>
-    <!-- </div> -->
-  </div>
-
-  <!--  <div class="welcome">
-    <div class="welcome-text">
-      <h1>
-        Welcome to
-        <a href="https://devchallenges.io/" target="_blank">devchallenges.io</a>
-      </h1>
-
-      <p>
-        If you have any questions, don't hesitate to ask on Discord. Here are
-        7 general steps to complete the challenge:
-      </p>
-    </div>
-
-    <ul>
-      <li><b>Step 1:</b> Create a new repository on github</li>
-      <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-      <li>
-        <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-      </li>
-      <li><b>Step 4:</b> Complete all user stories</li>
-      <li><b>Step 5:</b> Update README.md</li>
-      <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-      <li>
-        <b>Step 7:</b> Share your solution on Discord, Twitter and other
-        platforms to ask for feedback
-      </li>
-    </ul>
-  </div> -->
-</body>
-
+    </main>
+    <footer>
+      created by
+      <b><a href="https://github.com/Deekshithrathod">Deekshith</a></b> -
+      devChallenges.io
+    </footer>
+  </body>
 </html>
